@@ -1,0 +1,9 @@
+﻿@model IEnumerable<TaskModel>
+
+@foreach (var p in Model) {
+    <div>
+        <h3>@p.Name</h3>
+        @p.Deadline
+        @p.IsCompleted
+    </div>
+} 
